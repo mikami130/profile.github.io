@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      <title>Profile site</title>
+
+      <link rel="stylesheet" href="styles/_reset.css" />
+
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css"
+      />
+
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+      <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jaro:opsz@6..72&family=Poetsen+One&display=swap"
+        rel="stylesheet"
+      />
+
+      <link rel="stylesheet" href="styles/style.css" />
+      <script
+        defer
+        src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"
+      ></script>
+      <script
+        src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous"
+      ></script>
+      <script defer src="scripts/main.js"></script>
+    </head>
+  </head>
+  <body>
+    <header>
+      <a class="top-link" href="/">TOP</a>
+
+      <input type="checkbox" class="menu-btn" id="menu-btn" />
+      <label for="menu-btn" class="menu-icon"
+        ><span class="navicon"></span
+      ></label>
+      <nav class="menu">
+        <a class="nav-link" href="#profile">Profile</a>
+        <a class="nav-link" href="#favorite">Favorite</a>
+        <a class="nav-link" href="#video">Video</a>
+      </nav>
+    </header>
+
+    <div class="parent">
+      <div class="child top-title">
+        <h1>Personal Website</h1>
+        <span>-Shusuke Mikami-</span>
+      </div>
+      <div class="child swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/slide/bark-8526227_1280.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/slide/bubbles-230014_1280.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/slide/sky-3294543_1280.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/slide/stars-2179083_1280.jpg" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<section class="profile" id="profile">
+  <h2 class="section-title">Profile</h2>
+  <div class="container">
+    <div class="js-scroll -fadein">
+      <img class="profile-image" src="images/ball.jpg" alt="profile-photo" />
+    </div>
+    <div class="profile-text">
+      <p>三上修典</p>
+      <p>
+        こんにちは！みかみしゅうすけです。
+        2004年1月30日生まれで、今年20歳になりました。
+        ゼミではコミュニケーション能力、プログラミング知識を身に付けたいです。
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="favorite" id="favorite">
+  <h2 class="section-title">Favorite</h2>
+  <div class="container">
+    <div class="item">
+      <h3 class="item-title">ローソン</h3>
+      <div class="js-scroll -fadein">
+        <img class="item-cover" src="images/favorite/lawson-logo.jpg" />
+      </div>
+      <p>
+        　大学一年生のころからローソンでバイトを始め、今年で約三年目になります。
+      </p>
+    </div>
+    <div class="item">
+      <h3 class="item-title">寿司</h3>
+      <div class="js-scroll -fadein">
+        <img
+          class="item-cover"
+          src="images/favorite/b6102ba936d614b766be6c69a26501641ce46208.jpeg"
+        />
+      </div>
+      <p>
+        　好きな食べ物は寿司で、特にホタテが好きです。<br />　最近は、家の近くにある平禄に初めて行きました。おいしかったです。
+      </p>
+    </div>
+    <div class="item">
+      <h3 class="item-title">筋トレ</h3>
+      <div class="js-scroll -fadein">
+        <img class="item-cover" src="images/favorite/OIP.jpg" />
+      </div>
+      <p>
+        　2週間ほど前に筋トレを始めました。<br />　筋トレを始めたのは今回で5回目ほどですが今回はマジです。
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section-image">
+  <div class="js-scroll -fadein">
+    <img src="images/ice-7660302_1280.jpg" />
+  </div>
+</section>
+
+<section class="video" id="video">
+  <h2 class="section-title">Video</h2>
+  <div class="container">
+    <div class="about">
+      <p>
+        最近はNew JeansというKPOPアイドルにはまってます。<br />先月には新曲の「Bubble
+        Gum」がリリースしました。
+      </p>
+    </div>
+    <!-- 動画プレイヤー -->
+    <iframe
+      src="https://www.youtube.com/watch?v=ft70sAYrFyY&pp=ygUY44OQ44OW44Or44Ks44OgIG5ld2plYW5z"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+  </div>
+</section>
+
+<footer>&copy; 2022 Itnav</footer>
